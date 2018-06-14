@@ -26,13 +26,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += main.cpp\
         login.cpp \
     letschat.cpp \
-    showresult.cpp
+    showresult.cpp \
+    register.cpp
 
 HEADERS  += login.h \
     letschat.h \
     showresult.h \
-    proto.h
+    proto.h \
+    register.h \
+    ../../include/proto_mode.h
 
 FORMS    += login.ui \
     letschat.ui \
-    showresult.ui
+    showresult.ui \
+    register.ui

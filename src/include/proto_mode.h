@@ -1,21 +1,41 @@
 #ifndef PROTOCAL_H
 #define PROTOCAL_H
 
-#define DEFAULT_SERVER_IP               "192.168.100.225"
+#define DEFAULT_SERVER_IP               "172.25.3.86"
+#define MAXSIZE	                        1024
+
+//<==================usermanager================>
+#define USER_REGISTER_INFO              0
+#define USER_CH_PASSWORD                1
+#define USER_CH_QUESTION                2
+#define USER_FIND_PASSWORD              3
 
 //<==================register================>
-#define MAXSIZE	                        1024
+
 #define REGISTER_STATUS_OK			    0
 #define REGISTER_STATUS_ERROR           1
 #define REGISTER_SERVER_IP              DEFAULT_SERVER_IP
-#define REGISTER_SERVER_PORT            10001
+#define REGISTER_SERVER_PORT            10010
 
-
-
+//<==================changepassword================>
+#define CHPWD_STATUS_OK			    0
+#define CHPWD_STATUS_ERROR           1
+#define CHPWD_SERVER_IP              DEFAULT_SERVER_IP
+#define CHPWD_SERVER_PORT            10011
+//<==================changequestion================>
+#define CHQUES_STATUS_OK			    0
+#define CHQUES_STATUS_ERROR           1
+#define CHQUES_SERVER_IP              DEFAULT_SERVER_IP
+#define CHQUES_SERVER_PORT            10012
+//<==================Retrieve the password================>
+#define REPWD_STATUS_OK			    0
+#define REPWD_STATUS_ERROR           1
+#define REPWD_SERVER_IP              DEFAULT_SERVER_IP
+#define REPWD_SERVER_PORT            10013
 struct user_st {
-    char action;
+    int  no;
     char uname[MAXSIZE];
-    char pwd[MAXSIZE];
+    char password[MAXSIZE];
     char question[MAXSIZE];
     char answer[MAXSIZE];
     int status;
@@ -32,12 +52,12 @@ struct user_st {
 #define CLIENT_LOGIN                          0
 #define CLIENT_EXIT                           1
 
-#define 
+ 
 
 struct login_st {
     char action;    // 登录/退出
-    char uname[UNAME_SIZE];
-    char password[UNAME_SIZE];
+    char uname[MAXSIZE];
+    char password[MAXSIZE];
     int  status;
 };
 
@@ -52,14 +72,14 @@ struct login_st {
 #define FRIENDMANAGER_SERVER_PORT       10004
 #define FRIENDMANAGER_STATUS_FRIEND     2
 
-#define 
+ 
 
 
 struct friendmanager_st {
     char action;
-    char src_uname[UNAME_SIZE];
-    char uname[UNAME_SIZE];
-    char name[UNAME_SIZE];//server write
+    char src_uname[MAXSIZE];
+    char uname[MAXSIZE];
+    char name[MAXSIZE];//server write
     int status;
 };
 

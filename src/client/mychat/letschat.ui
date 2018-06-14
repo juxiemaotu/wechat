@@ -32,21 +32,21 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="addbuddy">
    <property name="geometry">
     <rect>
-     <x>9</x>
-     <y>339</y>
-     <width>40</width>
-     <height>40</height>
+     <x>10</x>
+     <y>270</y>
+     <width>41</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string extracomment="add buddy"/>
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>../../../../../../coder98/proj/Chat/src/icon/add.jpeg</normaloff>../../../../../../coder98/proj/Chat/src/icon/add.jpeg</iconset>
+     <normaloff>../icon/add.jpeg</normaloff>../icon/add.jpeg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -59,17 +59,17 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>389</y>
+     <y>380</y>
      <width>40</width>
      <height>40</height>
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string extracomment="change the password"/>
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>../../../../../../coder98/proj/Chat/src/icon/setup.jpeg</normaloff>../../../../../../coder98/proj/Chat/src/icon/setup.jpeg</iconset>
+     <normaloff>../icon/setup.jpeg</normaloff>../icon/setup.jpeg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -105,7 +105,15 @@
    </property>
    <column>
     <property name="text">
-     <string>friend list</string>
+     <string>friends list</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
     </property>
    </column>
   </widget>
@@ -123,75 +131,59 @@
    <property name="geometry">
     <rect>
      <x>320</x>
-     <y>339</y>
+     <y>320</y>
      <width>421</width>
-     <height>81</height>
+     <height>101</height>
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="confirm">
    <property name="geometry">
     <rect>
      <x>745</x>
-     <y>339</y>
+     <y>318</y>
      <width>61</width>
-     <height>80</height>
+     <height>101</height>
     </rect>
    </property>
    <property name="text">
-    <string>SEND</string>
+    <string>enter</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="encrypted">
    <property name="geometry">
     <rect>
-     <x>323</x>
-     <y>306</y>
-     <width>61</width>
-     <height>25</height>
+     <x>10</x>
+     <y>320</y>
+     <width>41</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string extracomment="encrypted"/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../icon/timg.jpeg</normaloff>../icon/timg.jpeg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>41</width>
+     <height>41</height>
+    </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_5">
+  <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>306</y>
-     <width>61</width>
-     <height>25</height>
+     <x>10</x>
+     <y>20</y>
+     <width>41</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_6">
-   <property name="geometry">
-    <rect>
-     <x>480</x>
-     <y>305</y>
-     <width>61</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>PushButton</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_7">
-   <property name="geometry">
-    <rect>
-     <x>560</x>
-     <y>306</y>
-     <width>61</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>PushButton</string>
+    <string>bye</string>
    </property>
   </widget>
  </widget>

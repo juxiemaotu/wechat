@@ -26,13 +26,34 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += main.cpp\
         login.cpp \
     letschat.cpp \
-    showresult.cpp
+    showresult.cpp \
+    zhuce.cpp \
+    zhaohuimima2.cpp \
+    zhaohuimima3.cpp \
+    zhaohuimima.cpp \
+    addfriends.cpp \
+    mibaosiugai.cpp \
+    mimasiugai.cpp
 
 HEADERS  += login.h \
     letschat.h \
     showresult.h \
-    proto.h
+    proto.h \
+    zhuce.h \
+    zhaohuimima2.h \
+    zhaohuimima3.h \
+    zhaohuimima.h \
+    addfriends.h \
+    mibaosiugai.h \
+    mimasiugai.h
 
 FORMS    += login.ui \
     letschat.ui \
-    showresult.ui
+    showresult.ui \
+    zhuce.ui \
+    zhaohuimima2.ui \
+    zhaohuimima3.ui \
+    zhaohuimima.ui \
+    addfriends.ui \
+    mibaosiugai.ui \
+    mimasiugai.ui

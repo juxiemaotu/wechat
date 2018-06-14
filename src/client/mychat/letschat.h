@@ -15,6 +15,15 @@ public:
     explicit Letschat(QWidget *parent = 0);
     ~Letschat();
 
+private slots:
+    void on_pushButton_clicked();
+
+    void on_addbuddy_clicked();
+
+    void on_encrypted_clicked();
+
+    void on_pushButton_2_clicked();
+
 private:
     Ui::Letschat *ui;
 };

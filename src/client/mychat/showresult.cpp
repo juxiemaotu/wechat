@@ -1,6 +1,6 @@
 #include "showresult.h"
 #include "ui_showresult.h"
-
+#include"login.h"
 Showresult::Showresult(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Showresult)
@@ -24,4 +24,17 @@ void Showresult::setCancelButten(QString msg)
 Showresult::~Showresult()
 {
     delete ui;
+}
+
+void Showresult::on_cancelButton_clicked()
+{
+    close();
+}
+
+void Showresult::on_okButton_clicked()
+{
+    Login *login=new Login();
+    login->setAttribute(Qt::WA_DeleteOnClose);
+    login->show();
+    close();
 }

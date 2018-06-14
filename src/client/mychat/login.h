@@ -21,6 +21,10 @@ private slots:
     void on_loginButton_clicked();
     void readDataHandler();
 
+    void on_registerButton_clicked();
+
+    void on_findpwButton_clicked();
+
 private:
     Ui::Login *ui;
     QUdpSocket *socket;

@@ -21,8 +21,6 @@ private slots:
     void on_zhuceButton_clicked();
     void on_confirm_clicked();
 
-    //void on_tishi_linkActivated(const QString &link);
-
 private:
     Ui::zhuce *ui;
     QUdpSocket *socket;

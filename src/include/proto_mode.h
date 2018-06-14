@@ -71,15 +71,16 @@ struct login_st {
 #define FRIENDMANAGER_SERVER_IP         DEFAULT_SERVER_IP
 #define FRIENDMANAGER_SERVER_PORT       10004
 #define FRIENDMANAGER_STATUS_FRIEND     2
-
- 
+#define FRIENDMANAGER_STATUS_ERROR_FRIEND      3
+#define FRIENDMANAGER_STATUS_ERROR_ONLINE      4
+#define FRIENDMANAGER_STATUS_ERROR_EXIST      5
 
 
 struct friendmanager_st {
     char action;
     char src_uname[MAXSIZE];
     char uname[MAXSIZE];
-    char name[MAXSIZE];//server write
+//    char name[MAXSIZE];//server write
     int status;
 };
 

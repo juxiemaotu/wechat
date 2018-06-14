@@ -18,6 +18,11 @@ public:
     void setCancelButten(QString);
     ~Showresult();
 
+private slots:
+    void on_cancelButton_clicked();
+
+    void on_okButton_clicked();
+
 private:
     Ui::Showresult *ui;
 };

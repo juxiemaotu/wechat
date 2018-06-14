@@ -6,7 +6,8 @@
 #include "proto.h"
 #include "showresult.h"
 #include <QCryptographicHash>
-
+#include"zhuce.h"
+#include"zhaohuimima.h"
 Login::Login(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Login)
@@ -90,12 +91,18 @@ void Login::on_loginButton_clicked()
 
 
 
+void Login::on_registerButton_clicked()
+{
+    zhuce *Zhuce=new zhuce();
+    Zhuce->setAttribute(Qt::WA_DeleteOnClose);
+    Zhuce->show();
+    close();
+}
 
-
-
-
-
-
-
-
-
+void Login::on_findpwButton_clicked()
+{
+    zhaohuimima *Zhaohuimima=new zhaohuimima();
+    Zhaohuimima->setAttribute(Qt::WA_DeleteOnClose);
+    Zhaohuimima->show();
+    close();
+}

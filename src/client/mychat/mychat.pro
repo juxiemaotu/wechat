@@ -27,16 +27,46 @@ SOURCES += main.cpp\
         login.cpp \
     letschat.cpp \
     showresult.cpp \
+<<<<<<< HEAD
     register.cpp
+=======
+    zhuce.cpp \
+    zhaohuimima2.cpp \
+    zhaohuimima3.cpp \
+    zhaohuimima.cpp \
+    addfriends.cpp \
+    mibaosiugai.cpp \
+    mimasiugai.cpp
+>>>>>>> 878a3f501bf6d1e8f40a8cc5404afbea718f3637
 
 HEADERS  += login.h \
     letschat.h \
     showresult.h \
     proto.h \
+<<<<<<< HEAD
     register.h \
     ../../include/proto_mode.h
+=======
+    zhuce.h \
+    zhaohuimima2.h \
+    zhaohuimima3.h \
+    zhaohuimima.h \
+    addfriends.h \
+    mibaosiugai.h \
+    mimasiugai.h
+>>>>>>> 878a3f501bf6d1e8f40a8cc5404afbea718f3637
 
 FORMS    += login.ui \
     letschat.ui \
     showresult.ui \
+<<<<<<< HEAD
     register.ui
+=======
+    zhuce.ui \
+    zhaohuimima2.ui \
+    zhaohuimima3.ui \
+    zhaohuimima.ui \
+    addfriends.ui \
+    mibaosiugai.ui \
+    mimasiugai.ui
+>>>>>>> 878a3f501bf6d1e8f40a8cc5404afbea718f3637

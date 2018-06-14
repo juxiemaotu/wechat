@@ -3,7 +3,7 @@
 
 //#pragma pack(1)
 
-#define DEFAULT_SERVER_IP           "172.25.3.168"
+#define DEFAULT_SERVER_IP           "172.25.3.196"
 #define DEFAULT_SERVER_PORT			1989
 
 #define SIZE	               		128 
@@ -22,6 +22,8 @@ struct zhuce_st
 {
     char uname[SIZE];
     char password[SIZE];
+    char problem[SIZE];
+    char answer[SIZE];
     int status;
 }__attribute__((packed));
 
